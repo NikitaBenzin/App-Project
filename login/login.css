@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto";
+  background-color: #BED9ED;
+  display: flex;
+  justify-content: center;
+}
+body .container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .container header img {
+  width: 242px;
+  height: 114px;
+}
+body .container main {
+  width: 100%;
+  margin: 47px 0 43px 0;
+  color: #707070;
+}
+body .container main .email {
+  margin-bottom: 24px;
+}
+body .container main .password {
+  margin-bottom: 37px;
+}
+body .container main p {
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+body .container main input {
+  width: 100%;
+  height: 37px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+  background: #ffffff;
+  padding-left: 10px;
+}
+body .container main button {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+  border: none;
+  background: #6aa2f7;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  color: #707070;
+  text-transform: capitalize;
+}
+body .container footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container footer a {
+  text-decoration: none;
+  color: #6AA2F7;
+}
+body .container footer a:first-child {
+  margin-bottom: 17px;
+}
+
+.lang {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 71.2px;
+  height: 71.2px;
+  background-color: #6AA2F7;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+.lang img {
+  width: 46px;
+  height: 23px;
+}
+.lang .circle {
+  position: absolute;
+  top: 25px;
+  right: 13px;
+}
+.lang span:last-child {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 28px;
+  right: 9px;
+  opacity: 0%;
+  visibility: hidden;
+  background-color: #6AA2F7;
+  width: 54px;
+  height: 131px;
+  border-radius: 0 0 27px 27px;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.lang span:last-child img:first-child {
+  margin: 15px 0;
+}
+
+.lang:hover span:last-child {
+  opacity: 100%;
+  visibility: visible;
+}/*# sourceMappingURL=login.css.map */

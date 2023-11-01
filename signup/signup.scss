@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+// ---------- VARIABLES ---------- //
+$main-color: #BED9ED;
+$text-color: #707070;
+$btns-color: #6AA2F7;
+
+// ---------- STYLES ---------- //
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Roboto";
+    background-color: $main-color;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    .container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        main {
+            width: 100%;
+            color: $text-color;
+            padding-top: 29px;
+            section {
+                margin-top: 22px;
+            }
+
+            input[type=text], input[type=password]{
+                width: 100%;
+                height: 37px;
+                border: 1px solid $text-color;
+                border-radius: 10px;
+                filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+                background: #ffffff;
+                padding-left: 10px;
+                margin-top: 4px;
+            }
+            
+            .checkbox {
+                display: flex;
+                margin-left: 11px;
+                gap: 16px;
+                align-items: center;
+                input {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                width: 100%;
+                height: 45px;
+                border-radius: 10px;
+                filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+                border: none;
+                background: #6aa2f7;
+                cursor: pointer;
+                
+                font-size: 20px;
+                font-weight: normal;
+                font-style: normal;
+                color: $text-color;
+                text-transform: capitalize;
+                margin: 22px 0;
+            }
+        }
+    }
+}
