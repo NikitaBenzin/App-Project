@@ -3,23 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--ICONS!!!!!-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="./home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./oceny.css">
+    <title>Oceny</title>
 </head>
 <body>
+    
     <div class="container">
-        <h1>Miejsce na powiadomienia</h1>
         <main>
-            <p>GOOGLE API albo własna tabela z wydarzeniami z google calendar</p>
+            <ul class="lectures">
+                <li class="lecture">
+                    <p class="lecture-name">Architektura systemów</p>
+                    <span>
+                        <p class="ocena green">5</p>
+                        <p>Kolokwium</p>
+                    </span>
+                </li>
+    
+                <li class="lecture">
+                    <p class="lecture-name">Układy zasilające</p>
+                    <span>
+                        <p class="ocena green">4</p>
+                        <p>Projekt</p>
+                    </span>
+                    <span>
+                        <p class="ocena red">2</p>
+                        <p>Kolokwium</p>
+                    </span>
+                </li>
+                
+            </ul>
         </main>
     </div>
+    
+
+    <!-- ADD Lecture button -->
+    <div class="plus-btn"></div>
 
     <!-- APP MENU -->
     <nav class="tabbar tab-style2">
         <ul class="flex-center">
-            <li class="home active" data-where="home">
+            <li class="home" data-where="home">
                 <span class="material-symbols-outlined">
                     home
                 </span>
@@ -29,7 +53,7 @@
                     calendar_today
                 </span>
             </li>
-            <li class="task" data-where="task">
+            <li class="task active" data-where="task">
                 <span class="material-symbols-outlined">
                     task
                 </span>

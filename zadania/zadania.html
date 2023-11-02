@@ -3,23 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--ICONS!!!!!-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="./home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./zadania.css">
+    <title>Zadania</title>
 </head>
 <body>
+    
     <div class="container">
-        <h1>Miejsce na powiadomienia</h1>
         <main>
-            <p>GOOGLE API albo własna tabela z wydarzeniami z google calendar</p>
+            <ul class="lectures">
+                <li class="lecture">
+                    <p class="lecture-name">Język Angielski</p>
+                    <span>
+                        <p class="zadanie">Napisać email Podręcznik str 43 ćw 6</p>
+                        <p class="date red">31.10</p>
+                    </span>
+                </li>
+    
+                <li class="lecture">
+                    <p class="lecture-name">Język Angielski</p>
+                    <span>
+                        <p class="zadanie">Napisać email Podręcznik str 43 ćw 6</p>
+                        <p class="date green">11.11</p>
+                    </span>
+                </li>
+
+            </ul>
         </main>
     </div>
+    
+    <!-- ADD Lecture button -->
+    <div class="plus-btn"></div>
 
     <!-- APP MENU -->
     <nav class="tabbar tab-style2">
         <ul class="flex-center">
-            <li class="home active" data-where="home">
+            <li class="home" data-where="home">
                 <span class="material-symbols-outlined">
                     home
                 </span>
@@ -34,7 +53,7 @@
                     task
                 </span>
             </li>
-            <li class="edit" data-where="edit"><span class="material-symbols-outlined">
+            <li class="edit active" data-where="edit"><span class="material-symbols-outlined">
                     edit
                 </span>
             </li>

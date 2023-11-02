@@ -1,12 +1,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 // ---------- VARIABLES ---------- //
 $main-color: #BED9ED;
-$text-color: #707070;
+$text-and-border-color: #707070;
 $btns-color: #6AA2F7;
+$list-items-color: #ffffff;
+$hover-brightness: 0.87;
 
 // ---------- STYLES ---------- //
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+p{
+  color: $text-and-border-color;
+  font-size: 0.9375rem;
+}
+
+body {
+  width: 100%;
+  height: -webkit-fill-available;
+  font-family: "Roboto";
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;    
+  .container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+    
+  }
+}
+
+
+// ADD BTN
+.plus-btn{
+  position: fixed;
+  width: 4.375rem;
+  height: 4.375rem;
+  border: 0.0625rem solid $text-and-border-color;
+  background: $list-items-color;
+  border-radius: 50%;
+  bottom: 5.75rem;
+  right: 2.5rem;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+.plus-btn:hover {
+    bottom: 5.875rem;
+}
+
+.plus-btn::before{
+  content: "";
+  width: 0rem;
+  height: 2.375rem;
+  border-color: #707070;
+  border-width: 0.0625rem;
+  border-style: solid;
+  position: absolute;
+  bottom: 0.8125rem;
+  left: 2.0875rem;
+}
+
+.plus-btn::after{
+  content: "";
+  width: 0rem;
+  height: 2.375rem;
+  border-color: #707070;
+  border-width: 0.0625rem;
+  border-style: solid;
+  position: absolute;
+  bottom: 0.8125rem;
+  left: 2.0875rem;
+  rotate: 90deg;
+}
+
+
+
+// FREKWENCY COLORS
+.green {
+    color: #28FF00;
+}
+
+.yellow{
+    color: #E9CA00;
+}
+
+.red{
+    color: #FF0000;
+}
+
+
+
+// ------- NAVIGATION ------- //
+.flex-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .home {
+    &.active {
+      color: $btns-color;
+    }
+  }
+  
+  .calendar_today {
+    &.active {
+      color: $btns-color;
+    }
+  }
+  
+  .task {
+    &.active {
+      color: $btns-color;
+    }
+  }
+  
+  .edit {
+    &.active {
+      color: $btns-color;
+    }
+  }
+  
+  .tune {
+    &.active {
+      color: $btns-color;
+    }
+  }
+  
+  .tabbar {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    ul,
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    ul {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: $list-items-color;
+      align-self: flex-end;
+      justify-content: center;
+      height: 3.125rem;
+    }
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      margin-right: 0.3125rem;
+      transition: all 0.4s;
+      background-color: $list-items-color;
+      width: 3.75rem;
+      height: 3.75rem;
+      position: relative;
+      color: $text-and-border-color;
+      cursor: pointer;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .tab-style2 {
+    ul {
+      justify-content: center;
+    }
+  
+    li {
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0.0625rem;
+      left: 0;
+      width: 3.75rem;
+      height: 3.125rem;
+    }
+  
+    .active {
+      width: 3.75rem;
+      height: 3.75rem;
+      top: -16px;
+  
+      span {
+        font-size: 32px;
+      }
+  
+      &:before {
+        border-bottom-right-radius: 100%;
+        left: -0.4375rem;
+      }
+  
+      &:after {
+        border-bottom-left-radius: 100%;
+        right: -0.4375rem;
+      }
+    }
+  }
+  
+.material-symbols-outlined {
+    font-size: 1.875rem;
 }

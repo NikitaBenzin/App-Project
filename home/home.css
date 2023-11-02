@@ -26,11 +26,11 @@ body .container h1 {
   font-weight: normal;
   font-style: normal;
   color: #000000;
-  margin: 21px 0 9px 0;
-  padding: 20px 0;
+  margin: 1.3125rem 0 0.5625rem 0;
+  padding: 1.25rem 0;
   width: 100%;
-  border: 1px solid #707070;
-  border-radius: 39px;
+  border: 0.0625rem solid #707070;
+  border-radius: 2.4375rem;
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -40,9 +40,9 @@ body .container main {
   width: 100%;
   height: 100%;
   border-color: #707070;
-  border-width: 1px;
+  border-width: 0.0625rem;
   border-style: solid;
-  border-radius: 47px;
+  border-radius: 2.9375rem;
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -94,18 +94,18 @@ body .container main {
   background-color: #f9f8fa;
   align-self: flex-end;
   justify-content: center;
-  height: 50px;
+  height: 3.125rem;
 }
 .tabbar li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
-  margin-right: 5px;
+  font-size: 16px;
+  margin-right: 0.3125rem;
   transition: all 0.4s;
   background-color: #f9f8fa;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   position: relative;
   color: #888;
   cursor: pointer;
@@ -123,36 +123,36 @@ body .container main {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 1px;
+  top: 0.0625rem;
   left: 0;
-  width: 60px;
-  height: 50px;
+  width: 3.75rem;
+  height: 3.125rem;
 }
 .tab-style2 .active {
-  width: 60px;
-  height: 60px;
-  top: -1rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  top: -16px;
 }
 .tab-style2 .active span {
-  font-size: 2rem;
+  font-size: 32px;
 }
 .tab-style2 .active:before, .tab-style2 .active:after {
   position: absolute;
   content: " ";
-  width: 13px;
-  height: 13px;
-  border-bottom: 4px solid #f9f8fa;
-  top: 8px;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-bottom: 0.25rem solid #f9f8fa;
+  top: 0.5rem;
 }
 .tab-style2 .active:before {
   border-bottom-right-radius: 100%;
-  left: -7px;
+  left: -0.4375rem;
 }
 .tab-style2 .active:after {
   border-bottom-left-radius: 100%;
-  right: -7px;
+  right: -0.4375rem;
 }
 
 .material-symbols-outlined {
-  font-size: 30px;
+  font-size: 1.875rem;
 }/*# sourceMappingURL=home.css.map */

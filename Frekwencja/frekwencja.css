@@ -11,7 +11,6 @@ ul {
 
 p {
   color: #707070;
-  font-size: 0.9375rem;
 }
 
 body {
@@ -28,7 +27,33 @@ body .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5rem;
+  padding-bottom: 80px;
+}
+body .container main {
+  width: 100%;
+  margin-top: 3.0625rem;
+}
+body .container main .lectures .lecture {
+  width: 100%;
+  border-color: #707070;
+  border: 0.0625rem solid #707070;
+  border-radius: 2.9375rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0.875rem;
+  align-items: center;
+  margin-bottom: 0.3125rem;
+  cursor: pointer;
+}
+body .container main .lectures .lecture .lecture-name {
+  font-size: 1.25rem;
+}
+body .container main .lectures .lecture .percent {
+  font-size: 1.5625rem;
+}
+body .container main .lectures .lecture:hover {
+  background-color: #e4e4e4;
 }
 
 .plus-btn {
@@ -126,7 +151,7 @@ body .container {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #f9f8fa;
   align-self: flex-end;
   justify-content: center;
   height: 3.125rem;
@@ -138,11 +163,11 @@ body .container {
   font-size: 16px;
   margin-right: 0.3125rem;
   transition: all 0.4s;
-  background-color: #ffffff;
+  background-color: #f9f8fa;
   width: 3.75rem;
   height: 3.75rem;
   position: relative;
-  color: #707070;
+  color: #888;
   cursor: pointer;
 }
 .tabbar li:last-child {
@@ -153,7 +178,8 @@ body .container {
   justify-content: center;
 }
 .tab-style2 li {
-  border-radius: 100%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +196,14 @@ body .container {
 .tab-style2 .active span {
   font-size: 32px;
 }
+.tab-style2 .active:before, .tab-style2 .active:after {
+  position: absolute;
+  content: " ";
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-bottom: 0.25rem solid #f9f8fa;
+  top: 0.5rem;
+}
 .tab-style2 .active:before {
   border-bottom-right-radius: 100%;
   left: -0.4375rem;
@@ -181,4 +215,4 @@ body .container {
 
 .material-symbols-outlined {
   font-size: 1.875rem;
-}/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=frekwencja.css.map */

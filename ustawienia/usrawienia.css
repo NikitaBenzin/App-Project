@@ -28,61 +28,98 @@ body .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5rem;
+  padding-bottom: 80px;
 }
-
-.plus-btn {
-  position: fixed;
-  width: 4.375rem;
-  height: 4.375rem;
-  border: 0.0625rem solid #707070;
+body .container header {
+  position: absolute;
+  width: 100%;
+  height: 3.375rem;
   background: #ffffff;
-  border-radius: 50%;
-  bottom: 5.75rem;
-  right: 2.5rem;
-  cursor: pointer;
-  transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 2.5rem;
 }
-
-.plus-btn:hover {
-  bottom: 5.875rem;
+body .container header p {
+  font-size: 1.6875rem;
+  font-weight: bold;
+  line-height: 1.6875rem;
+  font-style: normal;
+  color: #707070;
 }
-
-.plus-btn::before {
-  content: "";
-  width: 0rem;
-  height: 2.375rem;
+body .container main {
+  width: 100%;
+  margin-top: 4.625rem;
+}
+body .container main .profile-info {
+  display: flex;
+  align-items: start;
+  gap: 1.9375rem;
+  margin-bottom: 1.8125rem;
+}
+body .container main .profile-info img {
+  width: 5.625rem;
+  height: 5.625rem;
   border-color: #707070;
   border-width: 0.0625rem;
   border-style: solid;
-  position: absolute;
-  bottom: 0.8125rem;
-  left: 2.0875rem;
+  border-radius: 100%;
 }
-
-.plus-btn::after {
+body .container main .profile-info span .username {
+  width: 15.1875rem;
+  height: 2.3125rem;
+  font-family: "Segoe UI";
+  font-size: 1.6875rem;
+  font-weight: normal;
+  line-height: 1.6875rem;
+  font-style: normal;
+  text-align: left;
+  color: #707070;
+}
+body .container main .profile-info span .group-name {
+  width: 15.1875rem;
+  height: 1.6875rem;
+  font-family: "Segoe UI";
+  font-size: 1.1875rem;
+  font-weight: normal;
+  line-height: 1.6875rem;
+  font-style: normal;
+  text-align: left;
+  color: #707070;
+}
+body .container main .main-nav ul .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+body .container main .main-nav ul .nav-item span {
+  color: #707070;
+}
+body .container main .main-nav ul .nav-item p {
+  font-size: 1.5625rem;
+}
+body .container main .main-nav ul .nav-item:nth-child(4) {
+  position: relative;
+}
+body .container main .main-nav ul .nav-item:nth-child(4)::before {
   content: "";
-  width: 0rem;
-  height: 2.375rem;
-  border-color: #707070;
-  border-width: 0.0625rem;
-  border-style: solid;
   position: absolute;
-  bottom: 0.8125rem;
-  left: 2.0875rem;
-  rotate: 90deg;
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #707070;
+  top: -0.7813rem;
 }
-
-.green {
-  color: #28FF00;
+body .container main .main-nav ul .nav-item:nth-child(5) {
+  position: relative;
 }
-
-.yellow {
-  color: #E9CA00;
-}
-
-.red {
-  color: #FF0000;
+body .container main .main-nav ul .nav-item:nth-child(5)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #707070;
+  bottom: -0.7813rem;
 }
 
 .flex-center {
@@ -181,4 +218,4 @@ body .container {
 
 .material-symbols-outlined {
   font-size: 1.875rem;
-}/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=usrawienia.css.map */

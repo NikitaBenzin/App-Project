@@ -11,7 +11,6 @@ ul {
 
 p {
   color: #707070;
-  font-size: 0.9375rem;
 }
 
 body {
@@ -30,46 +29,83 @@ body .container {
   align-items: center;
   padding-bottom: 5rem;
 }
+body .container main {
+  width: 100%;
+  margin-top: 49px;
+}
+body .container main .lectures .lecture {
+  width: 100%;
+  border-color: #707070;
+  border: 1px solid #707070;
+  border-radius: 47px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 14px;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+body .container main .lectures .lecture .lecture-name {
+  font-size: 20px;
+}
+body .container main .lectures .lecture span {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 4px 0 0 34px;
+  gap: 13px;
+}
+body .container main .lectures .lecture span p {
+  font-size: 15px;
+}
+body .container main .lectures .lecture span .ocena {
+  font-size: 25px;
+}
+body .container main .lectures .lecture:hover {
+  background-color: #e4e4e4;
+}
 
 .plus-btn {
   position: fixed;
-  width: 4.375rem;
-  height: 4.375rem;
-  border: 0.0625rem solid #707070;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #707070;
   background: #ffffff;
   border-radius: 50%;
-  bottom: 5.75rem;
-  right: 2.5rem;
+  bottom: 92px;
+  right: 40px;
   cursor: pointer;
   transition-duration: 0.2s;
 }
 
 .plus-btn:hover {
-  bottom: 5.875rem;
+  bottom: 94px;
 }
 
 .plus-btn::before {
   content: "";
-  width: 0rem;
-  height: 2.375rem;
+  width: 0px;
+  height: 38px;
   border-color: #707070;
-  border-width: 0.0625rem;
+  border-width: 1px;
   border-style: solid;
   position: absolute;
-  bottom: 0.8125rem;
-  left: 2.0875rem;
+  bottom: 13px;
+  left: 33.4px;
 }
 
 .plus-btn::after {
   content: "";
-  width: 0rem;
-  height: 2.375rem;
+  width: 0px;
+  height: 38px;
   border-color: #707070;
-  border-width: 0.0625rem;
+  border-width: 1px;
   border-style: solid;
   position: absolute;
-  bottom: 0.8125rem;
-  left: 2.0875rem;
+  bottom: 13px;
+  left: 33.4px;
   rotate: 90deg;
 }
 
@@ -126,23 +162,23 @@ body .container {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #f9f8fa;
   align-self: flex-end;
   justify-content: center;
-  height: 3.125rem;
+  height: 50px;
 }
 .tabbar li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  margin-right: 0.3125rem;
+  font-size: 1rem;
+  margin-right: 5px;
   transition: all 0.4s;
-  background-color: #ffffff;
-  width: 3.75rem;
-  height: 3.75rem;
+  background-color: #f9f8fa;
+  width: 60px;
+  height: 60px;
   position: relative;
-  color: #707070;
+  color: #888;
   cursor: pointer;
 }
 .tabbar li:last-child {
@@ -153,32 +189,41 @@ body .container {
   justify-content: center;
 }
 .tab-style2 li {
-  border-radius: 100%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0.0625rem;
+  top: 1px;
   left: 0;
-  width: 3.75rem;
-  height: 3.125rem;
+  width: 60px;
+  height: 50px;
 }
 .tab-style2 .active {
-  width: 3.75rem;
-  height: 3.75rem;
-  top: -16px;
+  width: 60px;
+  height: 60px;
+  top: -1rem;
 }
 .tab-style2 .active span {
-  font-size: 32px;
+  font-size: 2rem;
+}
+.tab-style2 .active:before, .tab-style2 .active:after {
+  position: absolute;
+  content: " ";
+  width: 13px;
+  height: 13px;
+  border-bottom: 4px solid #f9f8fa;
+  top: 8px;
 }
 .tab-style2 .active:before {
   border-bottom-right-radius: 100%;
-  left: -0.4375rem;
+  left: -7px;
 }
 .tab-style2 .active:after {
   border-bottom-left-radius: 100%;
-  right: -0.4375rem;
+  right: -7px;
 }
 
 .material-symbols-outlined {
-  font-size: 1.875rem;
-}/*# sourceMappingURL=global.css.map */
+  font-size: 30px;
+}/*# sourceMappingURL=oceny.css.map */

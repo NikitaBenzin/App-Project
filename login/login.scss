@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 // ---------- VARIABLES ---------- //
 $main-color: #BED9ED;
-$text-color: #707070;
+$text-and-border-color: #707070;
 $btns-color: #6AA2F7;
+$list-items-color: #ffffff;
+$hover-brightness: 0.87;
 
 // ---------- STYLES ---------- //
 * {
@@ -29,50 +32,50 @@ body {
         
         header {
             img {
-                width: 242px;
-                height: 114px;
+                width: 15.125rem;
+                height: 7.125rem;
             }
         }
 
         main {
             width: 100%;
-            margin: 47px 0 43px 0;
+            margin: 2.9375rem 0 2.6875rem 0;
             color: $text-color;
 
             .email {
-                margin-bottom: 24px;
+                margin-bottom: 1.5rem;
             }
 
             .password {
-                margin-bottom: 37px;
+                margin-bottom: 2.3125rem;
             }
 
             p {
                 text-transform: capitalize;
-                font-size: 15px;
-                margin-bottom: 4px;
+                font-size: 0.9375rem;
+                margin-bottom: 0.25rem;
             }
 
             input {
                 width: 100%;
-                height: 37px;
-                border: 1px solid $text-color;
-                border-radius: 10px;
-                filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+                height: 2.3125rem;
+                border: 0.0625rem solid $text-color;
+                border-radius: 0.625rem;
+                filter: drop-shadow(0rem 0.1875rem 0.1875rem rgba(0,0,0,0.16 ));
                 background: #ffffff;
-                padding-left: 10px;
+                padding-left: 0.625rem;
             }
 
             button {
                 width: 100%;
-                height: 45px;
-                border-radius: 10px;
-                filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+                height: 2.8125rem;
+                border-radius: 0.625rem;
+                filter: drop-shadow(0rem 0.1875rem 0.1875rem rgba(0,0,0,0.16 ));
                 border: none;
                 background: #6aa2f7;
                 cursor: pointer;
                 
-                font-size: 20px;
+                font-size: 1.25rem;
                 font-weight: normal;
                 font-style: normal;
                 color: $text-color;
@@ -89,7 +92,7 @@ body {
                 color: $btns-color;
             }
             a:first-child {
-                margin-bottom: 17px;
+                margin-bottom: 1.0625rem;
             }
         }
 
@@ -98,11 +101,11 @@ body {
 
 .lang {
     position: absolute;
-    top: 18px;
-    right: 12px;
+    top: 1.125rem;
+    right: 0.75rem;
     user-select: none;
-    width: 71.2px;
-    height: 71.2px;
+    width: 4.45rem;
+    height: 4.45rem;
     background-color: $btns-color;
     border-radius: 50%;
     z-index: 10;
@@ -110,35 +113,35 @@ body {
     cursor: pointer;
 
     img {
-        width: 46px;
-        height: 23px;
+        width: 2.875rem;
+        height: 1.4375rem;
     }
 
     .circle {
         position: absolute;
-        top: 25px;
-        right: 13px;
+        top: 1.5625rem;
+        right: 0.8125rem;
     }
 
     span:last-child {
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 28px;
-        right: 9px;
+        top: 1.75rem;
+        right: 0.5625rem;
         opacity: 0%;
         visibility: hidden;
         background-color: $btns-color;
-        width: 54px;
-        height: 131px;
-        border-radius: 0 0 27px 27px;
+        width: 3.375rem;
+        height: 8.1875rem;
+        border-radius: 0 0 1.6875rem 1.6875rem;
         align-items: center;
         justify-content: center;
         z-index: -1;
         transition-property: all;
         transition-duration: 0.3s;
         img:first-child {
-            margin: 15px 0;
+            margin: 0.9375rem 0;
         }
     }
 }

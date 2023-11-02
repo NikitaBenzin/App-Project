@@ -5,26 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--ICONS!!!!!-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="./home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./frekwencja.css">
+    <title>Frekwencja</title>
 </head>
 <body>
+    
     <div class="container">
-        <h1>Miejsce na powiadomienia</h1>
         <main>
-            <p>GOOGLE API albo własna tabela z wydarzeniami z google calendar</p>
+            <ul class="lectures">
+                <li class="lecture">
+                    <p class="lecture-name">Układy zasilające</p>
+                    <span class="percent yellow">88%</span>
+                </li>
+    
+                <li class="lecture">
+                    <p class="lecture-name">Architektura systemów</p>
+                    <span class="percent red">76%</span>
+                </li>
+            </ul>
         </main>
     </div>
+
+    <!-- ADD Lecture button -->
+    <div class="plus-btn"></div>
 
     <!-- APP MENU -->
     <nav class="tabbar tab-style2">
         <ul class="flex-center">
-            <li class="home active" data-where="home">
+            <li class="home" data-where="home">
                 <span class="material-symbols-outlined">
                     home
                 </span>
             </li>
-            <li class="calendar_today" data-where="calendar_today">
+            <li class="calendar_today active" data-where="calendar_today">
                 <span class="material-symbols-outlined">
                     calendar_today
                 </span>
